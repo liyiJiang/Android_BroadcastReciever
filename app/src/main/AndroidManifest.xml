@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.android_broadcastreciever">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".MyReciever"
+        android:enabled="true"
+        android:exported="true"
+        ><intent-filter
+            android:priority="5"
+           >
+            <action android:name="beautiful"></action>
+        </intent-filter>
+
+        </receiver>
+        <receiver android:name=".MyReciever1"
+            android:enabled="true"
+            android:exported="true"
+            ><intent-filter
+            android:priority="41"
+            >
+            <action android:name="beautiful"></action>
+        </intent-filter>
+
+        </receiver>
+        <receiver android:name=".MyReciever2"
+            android:enabled="true"
+            android:exported="true"
+            ><intent-filter
+            android:priority="334"
+            >
+            <action android:name="beautiful"></action>
+        </intent-filter>
+
+        </receiver>
+        <receiver android:name=".MyReciever3"
+            android:enabled="true"
+            android:exported="true"
+            ><intent-filter
+            android:priority="626"
+            >
+            <action android:name="beautiful"></action>
+        </intent-filter>
+
+        </receiver>
+        <receiver android:name=".MyReciever4"
+            android:enabled="true"
+            android:exported="true"
+            ><intent-filter
+            android:priority="881"
+            >
+            <action android:name="beautiful"></action>
+        </intent-filter>
+
+        </receiver>
+    </application>
+
+</manifest>
